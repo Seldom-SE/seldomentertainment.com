@@ -1,0 +1,50 @@
+<!--seldomentertainment.com by Seldom 2019-2020-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Seldom Entertainment</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <script src="jquery/jquery-3.3.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            var urlParams = new URLSearchParams(window.location.search);
+            var id = "none";
+            if (urlParams.has('id')) {
+                id = urlParams.get('id');
+            }
+            var page = "seasons";
+        </script>
+        <script src="js/xml.js"></script>
+        <script src="js/cards.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row my-2"><a href="projects.html">
+                <img src="images/logo.png" alt="Seldom Entertainment">
+            </a></div>
+
+            <div class="row active pb-2">
+                <div id="seasons-tab"><a href="seasons.html"><div id="seasons-text">
+                    Seasons
+                </div></a></div>
+                <div id="projects-tab"><a href="projects.html"><div id="projects-text">
+                    Projects
+                </div></a></div>
+                <div id="contributors-tab"><a href="contributors.html"><div id="contributors-text">
+                    Contributors
+                </div></a></div>
+            </div>
+
+            <div id="selection"></div>
+
+            <div id="cards"></div>
+
+            <div class="row active my-3"></div>
+        </div>
+    </body>
+</html>
